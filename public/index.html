@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contractor Sales Intelligence</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">ZIP 10013 / 25 mi</p>
+        <h1>Contractor Sales Intelligence</h1>
+      </div>
+      <div class="status-strip">
+        <span id="sourceBadge" class="badge">Loading</span>
+        <span id="modelBadge" class="badge neutral">Scoring</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="summary-grid" aria-label="Market summary">
+        <article class="stat-tile">
+          <span class="stat-label">Companies</span>
+          <strong id="companyCount">0</strong>
+        </article>
+        <article class="stat-tile">
+          <span class="stat-label">High Priority</span>
+          <strong id="highPriority">0</strong>
+        </article>
+        <article class="stat-tile">
+          <span class="stat-label">Average Score</span>
+          <strong id="averageScore">0</strong>
+        </article>
+        <article class="stat-tile">
+          <span class="stat-label">Radius</span>
+          <strong id="radius">25 mi</strong>
+        </article>
+      </section>
+
+      <section class="toolbar" aria-label="Lead filters">
+        <label>
+          Search
+          <input id="searchInput" type="search" placeholder="Company, city, service">
+        </label>
+        <label>
+          State
+          <select id="stateSelect">
+            <option value="all">All states</option>
+          </select>
+        </label>
+        <label>
+          Minimum score
+          <select id="scoreSelect">
+            <option value="0">Any score</option>
+            <option value="60">60+</option>
+            <option value="70">70+</option>
+            <option value="80">80+</option>
+          </select>
+        </label>
+        <button id="refreshButton" type="button">Refresh</button>
+      </section>
+
+      <section class="workspace">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Priority</th>
+                <th>Buy</th>
+                <th>Size</th>
+                <th>GAF</th>
+                <th>Reviews</th>
+                <th>Employees</th>
+                <th>Revenue</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody id="companyRows"></tbody>
+          </table>
+        </div>
+
+        <aside class="detail-panel" aria-label="Company details">
+          <div id="emptyState" class="empty-state">
+            Select a company to inspect score drivers.
+          </div>
+          <div id="companyDetail" class="detail-content hidden"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

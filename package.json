@@ -1,0 +1,22 @@
+{
+  "name": "contract-sales-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "score:preview": "node src/services/score-preview.js",
+    "scrape:gaf": "node src/jobs/scrape-gaf.js",
+    "worker:gaf-daily": "node src/jobs/gafDailyWorker.js",
+    "db:schema": "psql \"$DATABASE_URL\" -f db/schema.sql"
+  },
+  "dependencies": {
+    "pg": "^8.12.0",
+    "playwright": "^1.49.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,2631 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/vdxa0u",
+    "id": "vdxa0u",
+    "slide": 1,
+    "layoutId": "babb3bf9-f1ba-4faf-ac82-f73af07205f8",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "6c6f3b25-bbdf-4415-a1e0-9862eece1fca",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Helvetica Neue"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "babb3bf9-f1ba-4faf-ac82-f73af07205f8",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "6c6f3b25-bbdf-4415-a1e0-9862eece1fca",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "6c6f3b25-bbdf-4415-a1e0-9862eece1fca",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4byhgn29",
+      "id": "1",
+      "bbox": [
+        42,
+        38,
+        340,
+        26
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0"
+      },
+      "geometry": "rect",
+      "text": "01 / PROBLEM + USERS",
+      "textPreview": "01 / PROBLEM + USERS",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Helvetica Neue",
+        "color": "#555555",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "01 / PROBLEM + USERS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "01 / PROBLEM + USERS",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 14,
+            "typeface": "Helvetica Neue",
+            "color": "#555555",
+            "bold": true,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "01 / PROBLEM + USERS",
+              "anchor": 1,
+              "fontSize": 14,
+              "typeface": "Helvetica Neue",
+              "color": "#555555",
+              "bold": true,
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bq1oryts",
+      "id": "2",
+      "bbox": [
+        42,
+        86,
+        760,
+        144
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "text": "Sales reps need a sharper contractor target list",
+      "textPreview": "Sales reps need a sharper contractor target list",
+      "resolvedFontSize": 50,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 50,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sales reps need a sharper"
+          },
+          {
+            "index": 2,
+            "text": "contractor target list"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sales reps need a sharper contractor target list",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "fontSize": 50,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "bold": true,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sales reps need a sharper contractor target list",
+              "anchor": 2,
+              "fontSize": 50,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "bold": true,
+              "verticalAlignment": "middle",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m58z25kb",
+      "id": "3",
+      "bbox": [
+        42,
+        246,
+        740,
+        64
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2"
+      },
+      "geometry": "rect",
+      "text": "The app converts public contractor listings and web research into a shared, ranked view of who to sell to first.",
+      "textPreview": "The app converts public contractor listings and web research into a shared, ranked view of who to sell to first.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Helvetica Neue",
+        "color": "#555555",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The app converts public contractor listings and web research into a shared,"
+          },
+          {
+            "index": 2,
+            "text": "ranked view of who to sell to first."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The app converts public contractor listings and web research into a shared, ranked view of who to sell to first.",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 21,
+            "typeface": "Helvetica Neue",
+            "color": "#555555",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The app converts public contractor listings and web research into a shared, ranked view of who to sell to first.",
+              "anchor": 1,
+              "fontSize": 21,
+              "typeface": "Helvetica Neue",
+              "color": "#555555",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t83itgfm",
+      "id": "4",
+      "name": "header-rule",
+      "bbox": [
+        42,
+        332,
+        740,
+        2
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.3"
+      },
+      "geometry": "rect",
+      "fillColor": "#000000"
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4nap4r65",
+      "id": "5",
+      "bbox": [
+        42,
+        664,
+        360,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.4"
+      },
+      "geometry": "rect",
+      "text": "Contractor Sales Intelligence",
+      "textPreview": "Contractor Sales Intelligence",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Helvetica Neue",
+        "color": "#555555",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Contractor Sales Intelligence"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Contractor Sales Intelligence",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 14,
+            "typeface": "Helvetica Neue",
+            "color": "#555555",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Contractor Sales Intelligence",
+              "anchor": 1,
+              "fontSize": 14,
+              "typeface": "Helvetica Neue",
+              "color": "#555555",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b2hwfyxo",
+      "id": "6",
+      "bbox": [
+        1060,
+        664,
+        178,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.5"
+      },
+      "geometry": "rect",
+      "text": "10013 radius MVP",
+      "textPreview": "10013 radius MVP",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Helvetica Neue",
+        "color": "#555555",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "10013 radius MVP"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10013 radius MVP",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 14,
+            "typeface": "Helvetica Neue",
+            "color": "#555555",
+            "alignment": "right",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10013 radius MVP",
+              "anchor": 1,
+              "fontSize": 14,
+              "typeface": "Helvetica Neue",
+              "color": "#555555",
+              "alignment": "right",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhk3q5o7",
+      "id": "7",
+      "name": "left-problem-panel",
+      "bbox": [
+        42,
+        372,
+        546,
+        246
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.0"
+      },
+      "geometry": "rect",
+      "fillColor": "#EDEDED"
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgfmlkjm",
+      "id": "8",
+      "bbox": [
+        72,
+        398,
+        160,
+        30
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "text": "Problem",
+      "textPreview": "Problem",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Problem"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Problem",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 18,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "bold": true,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Problem",
+              "anchor": 1,
+              "fontSize": 18,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "bold": true,
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4vmtwra5",
+      "id": "9",
+      "bbox": [
+        72,
+        444,
+        474,
+        118
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.2"
+      },
+      "geometry": "rect",
+      "text": "GAF contractor results are useful, but they are not sales-ready: reps still need company size, contact paths, buying signals, and a concise reason to prioritize one account over another.",
+      "textPreview": "GAF contractor results are useful, but they are not sales-ready: reps still need company size, contact paths, buying signals, and a conci...",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Helvetica Neue",
+        "color": "#222222",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GAF contractor results are useful, but they are"
+          },
+          {
+            "index": 2,
+            "text": "not sales-ready: reps still need company size,"
+          },
+          {
+            "index": 3,
+            "text": "contact paths, buying signals, and a concise"
+          },
+          {
+            "index": 4,
+            "text": "reason to prioritize one account over another."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GAF contractor results are useful, but they are not sales-ready: reps still need company size, contact paths, buying signals, and a concise reason to prioritize one account over another.",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 23,
+            "typeface": "Helvetica Neue",
+            "color": "#222222",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GAF contractor results are useful, but they are not sales-ready: reps still need company size, contact paths, buying signals, and a concise reason to prioritize one account over another.",
+              "anchor": 1,
+              "fontSize": 23,
+              "typeface": "Helvetica Neue",
+              "color": "#222222",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i5sneloj",
+      "id": "10",
+      "name": "problem-accent",
+      "bbox": [
+        72,
+        580,
+        92,
+        6
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.3"
+      },
+      "geometry": "rect",
+      "fillColor": "#FF6B35"
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7qpg3ex0",
+      "id": "11",
+      "bbox": [
+        182,
+        568,
+        330,
+        34
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.4"
+      },
+      "geometry": "rect",
+      "text": "Goal: prioritize most likely to buy, then largest company.",
+      "textPreview": "Goal: prioritize most likely to buy, then largest company.",
+      "resolvedFontSize": 14.17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Helvetica Neue",
+        "color": "#555555",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.79,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Goal: prioritize most likely to buy, then largest"
+          },
+          {
+            "index": 2,
+            "text": "company."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Goal: prioritize most likely to buy, then largest company.",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 18,
+            "typeface": "Helvetica Neue",
+            "color": "#555555",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Goal: prioritize most likely to buy, then largest company.",
+              "anchor": 1,
+              "fontSize": 18,
+              "typeface": "Helvetica Neue",
+              "color": "#555555",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0bi9s36h",
+      "id": "12",
+      "bbox": [
+        650,
+        372,
+        210,
+        30
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.5"
+      },
+      "geometry": "rect",
+      "text": "Core user",
+      "textPreview": "Core user",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Core user"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Core user",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 18,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "bold": true,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Core user",
+              "anchor": 1,
+              "fontSize": 18,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "bold": true,
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwb2hwfy",
+      "id": "13",
+      "name": "sales-rep-panel",
+      "bbox": [
+        650,
+        418,
+        554,
+        132
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.6"
+      },
+      "geometry": "rect",
+      "fillColor": "#F7F7F7"
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8v6psf",
+      "id": "14",
+      "bbox": [
+        674,
+        442,
+        180,
+        32
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.7"
+      },
+      "geometry": "rect",
+      "text": "Sales reps",
+      "textPreview": "Sales reps",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 26,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sales reps"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sales reps",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 26,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "bold": true,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sales reps",
+              "anchor": 1,
+              "fontSize": 26,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "bold": true,
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7y1kre1w",
+      "id": "15",
+      "bbox": [
+        674,
+        488,
+        456,
+        46
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.8"
+      },
+      "geometry": "rect",
+      "text": "Primary users who need a fast way to decide which contractors to contact first, what to say, and why each company deserves priority.",
+      "textPreview": "Primary users who need a fast way to decide which contractors to contact first, what to say, and why each company deserves priority.",
+      "resolvedFontSize": 15.18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Helvetica Neue",
+        "color": "#555555",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.84,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Primary users who need a fast way to decide which contractors to"
+          },
+          {
+            "index": 2,
+            "text": "contact first, what to say, and why each company deserves priority."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Primary users who need a fast way to decide which contractors to contact first, what to say, and why each company deserves priority.",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 18,
+            "typeface": "Helvetica Neue",
+            "color": "#555555",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Primary users who need a fast way to decide which contractors to contact first, what to say, and why each company deserves priority.",
+              "anchor": 1,
+              "fontSize": 18,
+              "typeface": "Helvetica Neue",
+              "color": "#555555",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjudg7ad",
+      "id": "16",
+      "name": "rep-workflow-1",
+      "bbox": [
+        650,
+        580,
+        162,
+        38
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.9"
+      },
+      "geometry": "rect",
+      "fillColor": "#000000"
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4r65wju",
+      "id": "17",
+      "bbox": [
+        670,
+        589,
+        122,
+        18
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.10"
+      },
+      "geometry": "rect",
+      "text": "Rank targets",
+      "textPreview": "Rank targets",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Helvetica Neue",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.94,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Rank targets"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Rank targets",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 16,
+            "typeface": "Helvetica Neue",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Rank targets",
+              "anchor": 1,
+              "fontSize": 16,
+              "typeface": "Helvetica Neue",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih4byhgn",
+      "id": "18",
+      "name": "rep-workflow-2",
+      "bbox": [
+        828,
+        580,
+        162,
+        38
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.11"
+      },
+      "geometry": "rect",
+      "fillColor": "#FF6B35"
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/72x4nap4",
+      "id": "19",
+      "bbox": [
+        848,
+        589,
+        122,
+        18
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.12"
+      },
+      "geometry": "rect",
+      "text": "Read rationale",
+      "textPreview": "Read rationale",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Helvetica Neue",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.94,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Read rationale"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Read rationale",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 16,
+            "typeface": "Helvetica Neue",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Read rationale",
+              "anchor": 1,
+              "fontSize": 16,
+              "typeface": "Helvetica Neue",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ji5snelo",
+      "id": "20",
+      "name": "rep-workflow-3",
+      "bbox": [
+        1006,
+        580,
+        198,
+        38
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.13"
+      },
+      "geometry": "rect",
+      "fillColor": "#EDEDED"
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxc3ylc7",
+      "id": "21",
+      "bbox": [
+        1026,
+        589,
+        158,
+        18
+      ],
+      "composeSource": {
+        "run": 2,
+        "path": "0.14"
+      },
+      "geometry": "rect",
+      "text": "Save favorites",
+      "textPreview": "Save favorites",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.94,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Save favorites"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Save favorites",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 16,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "bold": true,
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Save favorites",
+              "anchor": 1,
+              "fontSize": 16,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "bold": true,
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "baseUnit": 1,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "slide-title",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 1238,
+          "height": 688
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "text",
+            "position": {
+              "left": 42,
+              "top": 38
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 340
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 26
+              }
+            },
+            "intrinsicSize": {
+              "width": 340,
+              "height": 26
+            },
+            "frame": {
+              "left": 42,
+              "top": 38,
+              "width": 340,
+              "height": 26
+            },
+            "snappedFrame": {
+              "left": 42,
+              "top": 38,
+              "width": 340,
+              "height": 26
+            },
+            "children": [],
+            "text": "01 / PROBLEM + USERS",
+            "transform": "none",
+            "element": {
+              "aid": "sh/4byhgn29",
+              "id": "1",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "text",
+            "position": {
+              "left": 42,
+              "top": 86
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 760
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 144
+              }
+            },
+            "intrinsicSize": {
+              "width": 760,
+              "height": 144
+            },
+            "frame": {
+              "left": 42,
+              "top": 86,
+              "width": 760,
+              "height": 144
+            },
+            "snappedFrame": {
+              "left": 42,
+              "top": 86,
+              "width": 760,
+              "height": 144
+            },
+            "children": [],
+            "text": "Sales reps need a sharper contractor target list",
+            "transform": "none",
+            "element": {
+              "aid": "sh/bq1oryts",
+              "id": "2",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "text",
+            "position": {
+              "left": 42,
+              "top": 246
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 740
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 64
+              }
+            },
+            "intrinsicSize": {
+              "width": 740,
+              "height": 64
+            },
+            "frame": {
+              "left": 42,
+              "top": 246,
+              "width": 740,
+              "height": 64
+            },
+            "snappedFrame": {
+              "left": 42,
+              "top": 246,
+              "width": 740,
+              "height": 64
+            },
+            "children": [],
+            "text": "The app converts public contractor listings and web research into a shared, ranked view of who to sell to first.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/m58z25kb",
+              "id": "3",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.3",
+            "kind": "shape",
+            "name": "header-rule",
+            "position": {
+              "left": 42,
+              "top": 332
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 740
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 2
+              }
+            },
+            "intrinsicSize": {
+              "width": 740,
+              "height": 2
+            },
+            "frame": {
+              "left": 42,
+              "top": 332,
+              "width": 740,
+              "height": 2
+            },
+            "snappedFrame": {
+              "left": 42,
+              "top": 332,
+              "width": 740,
+              "height": 2
+            },
+            "children": [],
+            "geometry": "rect",
+            "element": {
+              "aid": "sh/t83itgfm",
+              "id": "4",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.4",
+            "kind": "text",
+            "position": {
+              "left": 42,
+              "top": 664
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 360
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 24
+              }
+            },
+            "intrinsicSize": {
+              "width": 360,
+              "height": 24
+            },
+            "frame": {
+              "left": 42,
+              "top": 664,
+              "width": 360,
+              "height": 24
+            },
+            "snappedFrame": {
+              "left": 42,
+              "top": 664,
+              "width": 360,
+              "height": 24
+            },
+            "children": [],
+            "text": "Contractor Sales Intelligence",
+            "transform": "none",
+            "element": {
+              "aid": "sh/4nap4r65",
+              "id": "5",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.5",
+            "kind": "text",
+            "position": {
+              "left": 1060,
+              "top": 664
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 178
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 24
+              }
+            },
+            "intrinsicSize": {
+              "width": 178,
+              "height": 24
+            },
+            "frame": {
+              "left": 1060,
+              "top": 664,
+              "width": 178,
+              "height": 24
+            },
+            "snappedFrame": {
+              "left": 1060,
+              "top": 664,
+              "width": 178,
+              "height": 24
+            },
+            "children": [],
+            "text": "10013 radius MVP",
+            "transform": "none",
+            "element": {
+              "aid": "sh/b2hwfyxo",
+              "id": "6",
+              "kind": "shape"
+            }
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 42,
+              "top": 38,
+              "width": 340,
+              "height": 26
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 42,
+              "top": 86,
+              "width": 760,
+              "height": 144
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 42,
+              "top": 246,
+              "width": 740,
+              "height": 64
+            }
+          },
+          {
+            "path": "0.3",
+            "frame": {
+              "left": 42,
+              "top": 332,
+              "width": 740,
+              "height": 2
+            }
+          },
+          {
+            "path": "0.4",
+            "frame": {
+              "left": 42,
+              "top": 664,
+              "width": 360,
+              "height": 24
+            }
+          },
+          {
+            "path": "0.5",
+            "frame": {
+              "left": 1060,
+              "top": 664,
+              "width": 178,
+              "height": 24
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "baseUnit": 1,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "problem-users-content",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 1204,
+          "height": 618
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "shape",
+            "name": "left-problem-panel",
+            "position": {
+              "left": 42,
+              "top": 372
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 546
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 246
+              }
+            },
+            "intrinsicSize": {
+              "width": 546,
+              "height": 246
+            },
+            "frame": {
+              "left": 42,
+              "top": 372,
+              "width": 546,
+              "height": 246
+            },
+            "snappedFrame": {
+              "left": 42,
+              "top": 372,
+              "width": 546,
+              "height": 246
+            },
+            "children": [],
+            "geometry": "rect",
+            "element": {
+              "aid": "sh/mhk3q5o7",
+              "id": "7",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "text",
+            "position": {
+              "left": 72,
+              "top": 398
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 160
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 30
+              }
+            },
+            "intrinsicSize": {
+              "width": 160,
+              "height": 30
+            },
+            "frame": {
+              "left": 72,
+              "top": 398,
+              "width": 160,
+              "height": 30
+            },
+            "snappedFrame": {
+              "left": 72,
+              "top": 398,
+              "width": 160,
+              "height": 30
+            },
+            "children": [],
+            "text": "Problem",
+            "transform": "none",
+            "element": {
+              "aid": "sh/tgfmlkjm",
+              "id": "8",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "text",
+            "position": {
+              "left": 72,
+              "top": 444
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 474
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 118
+              }
+            },
+            "intrinsicSize": {
+              "width": 474,
+              "height": 118
+            },
+            "frame": {
+              "left": 72,
+              "top": 444,
+              "width": 474,
+              "height": 118
+            },
+            "snappedFrame": {
+              "left": 72,
+              "top": 444,
+              "width": 474,
+              "height": 118
+            },
+            "children": [],
+            "text": "GAF contractor results are useful, but they are not sales-ready: reps still need company size, contact paths, buying signals, and a concise reason to prioritize one account over another.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/4vmtwra5",
+              "id": "9",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.3",
+            "kind": "shape",
+            "name": "problem-accent",
+            "position": {
+              "left": 72,
+              "top": 580
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 92
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 6
+              }
+            },
+            "intrinsicSize": {
+              "width": 92,
+              "height": 6
+            },
+            "frame": {
+              "left": 72,
+              "top": 580,
+              "width": 92,
+              "height": 6
+            },
+            "snappedFrame": {
+              "left": 72,
+              "top": 580,
+              "width": 92,
+              "height": 6
+            },
+            "children": [],
+            "geometry": "rect",
+            "element": {
+              "aid": "sh/i5sneloj",
+              "id": "10",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.4",
+            "kind": "text",
+            "position": {
+              "left": 182,
+              "top": 568
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 330
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 34
+              }
+            },
+            "intrinsicSize": {
+              "width": 330,
+              "height": 34
+            },
+            "frame": {
+              "left": 182,
+              "top": 568,
+              "width": 330,
+              "height": 34
+            },
+            "snappedFrame": {
+              "left": 182,
+              "top": 568,
+              "width": 330,
+              "height": 34
+            },
+            "children": [],
+            "text": "Goal: prioritize most likely to buy, then largest company.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/7qpg3ex0",
+              "id": "11",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.5",
+            "kind": "text",
+            "position": {
+              "left": 650,
+              "top": 372
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 210
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 30
+              }
+            },
+            "intrinsicSize": {
+              "width": 210,
+              "height": 30
+            },
+            "frame": {
+              "left": 650,
+              "top": 372,
+              "width": 210,
+              "height": 30
+            },
+            "snappedFrame": {
+              "left": 650,
+              "top": 372,
+              "width": 210,
+              "height": 30
+            },
+            "children": [],
+            "text": "Core user",
+            "transform": "none",
+            "element": {
+              "aid": "sh/0bi9s36h",
+              "id": "12",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.6",
+            "kind": "shape",
+            "name": "sales-rep-panel",
+            "position": {
+              "left": 650,
+              "top": 418
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 554
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 132
+              }
+            },
+            "intrinsicSize": {
+              "width": 554,
+              "height": 132
+            },
+            "frame": {
+              "left": 650,
+              "top": 418,
+              "width": 554,
+              "height": 132
+            },
+            "snappedFrame": {
+              "left": 650,
+              "top": 418,
+              "width": 554,
+              "height": 132
+            },
+            "children": [],
+            "geometry": "rect",
+            "element": {
+              "aid": "sh/pwb2hwfy",
+              "id": "13",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.7",
+            "kind": "text",
+            "position": {
+              "left": 674,
+              "top": 442
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 180
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 32
+              }
+            },
+            "intrinsicSize": {
+              "width": 180,
+              "height": 32
+            },
+            "frame": {
+              "left": 674,
+              "top": 442,
+              "width": 180,
+              "height": 32
+            },
+            "snappedFrame": {
+              "left": 674,
+              "top": 442,
+              "width": 180,
+              "height": 32
+            },
+            "children": [],
+            "text": "Sales reps",
+            "transform": "none",
+            "element": {
+              "aid": "sh/ed8v6psf",
+              "id": "14",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.8",
+            "kind": "text",
+            "position": {
+              "left": 674,
+              "top": 488
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 456
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 46
+              }
+            },
+            "intrinsicSize": {
+              "width": 456,
+              "height": 46
+            },
+            "frame": {
+              "left": 674,
+              "top": 488,
+              "width": 456,
+              "height": 46
+            },
+            "snappedFrame": {
+              "left": 674,
+              "top": 488,
+              "width": 456,
+              "height": 46
+            },
+            "children": [],
+            "text": "Primary users who need a fast way to decide which contractors to contact first, what to say, and why each company deserves priority.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/7y1kre1w",
+              "id": "15",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.9",
+            "kind": "shape",
+            "name": "rep-workflow-1",
+            "position": {
+              "left": 650,
+              "top": 580
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 162
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 38
+              }
+            },
+            "intrinsicSize": {
+              "width": 162,
+              "height": 38
+            },
+            "frame": {
+              "left": 650,
+              "top": 580,
+              "width": 162,
+              "height": 38
+            },
+            "snappedFrame": {
+              "left": 650,
+              "top": 580,
+              "width": 162,
+              "height": 38
+            },
+            "children": [],
+            "geometry": "rect",
+            "element": {
+              "aid": "sh/wjudg7ad",
+              "id": "16",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.10",
+            "kind": "text",
+            "position": {
+              "left": 670,
+              "top": 589
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 122
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 18
+              }
+            },
+            "intrinsicSize": {
+              "width": 122,
+              "height": 18
+            },
+            "frame": {
+              "left": 670,
+              "top": 589,
+              "width": 122,
+              "height": 18
+            },
+            "snappedFrame": {
+              "left": 670,
+              "top": 589,
+              "width": 122,
+              "height": 18
+            },
+            "children": [],
+            "text": "Rank targets",
+            "transform": "none",
+            "element": {
+              "aid": "sh/p4r65wju",
+              "id": "17",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.11",
+            "kind": "shape",
+            "name": "rep-workflow-2",
+            "position": {
+              "left": 828,
+              "top": 580
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 162
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 38
+              }
+            },
+            "intrinsicSize": {
+              "width": 162,
+              "height": 38
+            },
+            "frame": {
+              "left": 828,
+              "top": 580,
+              "width": 162,
+              "height": 38
+            },
+            "snappedFrame": {
+              "left": 828,
+              "top": 580,
+              "width": 162,
+              "height": 38
+            },
+            "children": [],
+            "geometry": "rect",
+            "element": {
+              "aid": "sh/ih4byhgn",
+              "id": "18",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.12",
+            "kind": "text",
+            "position": {
+              "left": 848,
+              "top": 589
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 122
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 18
+              }
+            },
+            "intrinsicSize": {
+              "width": 122,
+              "height": 18
+            },
+            "frame": {
+              "left": 848,
+              "top": 589,
+              "width": 122,
+              "height": 18
+            },
+            "snappedFrame": {
+              "left": 848,
+              "top": 589,
+              "width": 122,
+              "height": 18
+            },
+            "children": [],
+            "text": "Read rationale",
+            "transform": "none",
+            "element": {
+              "aid": "sh/72x4nap4",
+              "id": "19",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.13",
+            "kind": "shape",
+            "name": "rep-workflow-3",
+            "position": {
+              "left": 1006,
+              "top": 580
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 198
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 38
+              }
+            },
+            "intrinsicSize": {
+              "width": 198,
+              "height": 38
+            },
+            "frame": {
+              "left": 1006,
+              "top": 580,
+              "width": 198,
+              "height": 38
+            },
+            "snappedFrame": {
+              "left": 1006,
+              "top": 580,
+              "width": 198,
+              "height": 38
+            },
+            "children": [],
+            "geometry": "rect",
+            "element": {
+              "aid": "sh/ji5snelo",
+              "id": "20",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.14",
+            "kind": "text",
+            "position": {
+              "left": 1026,
+              "top": 589
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 158
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 18
+              }
+            },
+            "intrinsicSize": {
+              "width": 158,
+              "height": 18
+            },
+            "frame": {
+              "left": 1026,
+              "top": 589,
+              "width": 158,
+              "height": 18
+            },
+            "snappedFrame": {
+              "left": 1026,
+              "top": 589,
+              "width": 158,
+              "height": 18
+            },
+            "children": [],
+            "text": "Save favorites",
+            "transform": "none",
+            "element": {
+              "aid": "sh/uxc3ylc7",
+              "id": "21",
+              "kind": "shape"
+            }
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 42,
+              "top": 372,
+              "width": 546,
+              "height": 246
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 72,
+              "top": 398,
+              "width": 160,
+              "height": 30
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 72,
+              "top": 444,
+              "width": 474,
+              "height": 118
+            }
+          },
+          {
+            "path": "0.3",
+            "frame": {
+              "left": 72,
+              "top": 580,
+              "width": 92,
+              "height": 6
+            }
+          },
+          {
+            "path": "0.4",
+            "frame": {
+              "left": 182,
+              "top": 568,
+              "width": 330,
+              "height": 34
+            }
+          },
+          {
+            "path": "0.5",
+            "frame": {
+              "left": 650,
+              "top": 372,
+              "width": 210,
+              "height": 30
+            }
+          },
+          {
+            "path": "0.6",
+            "frame": {
+              "left": 650,
+              "top": 418,
+              "width": 554,
+              "height": 132
+            }
+          },
+          {
+            "path": "0.7",
+            "frame": {
+              "left": 674,
+              "top": 442,
+              "width": 180,
+              "height": 32
+            }
+          },
+          {
+            "path": "0.8",
+            "frame": {
+              "left": 674,
+              "top": 488,
+              "width": 456,
+              "height": 46
+            }
+          },
+          {
+            "path": "0.9",
+            "frame": {
+              "left": 650,
+              "top": 580,
+              "width": 162,
+              "height": 38
+            }
+          },
+          {
+            "path": "0.10",
+            "frame": {
+              "left": 670,
+              "top": 589,
+              "width": 122,
+              "height": 18
+            }
+          },
+          {
+            "path": "0.11",
+            "frame": {
+              "left": 828,
+              "top": 580,
+              "width": 162,
+              "height": 38
+            }
+          },
+          {
+            "path": "0.12",
+            "frame": {
+              "left": 848,
+              "top": 589,
+              "width": 122,
+              "height": 18
+            }
+          },
+          {
+            "path": "0.13",
+            "frame": {
+              "left": 1006,
+              "top": 580,
+              "width": 198,
+              "height": 38
+            }
+          },
+          {
+            "path": "0.14",
+            "frame": {
+              "left": 1026,
+              "top": 589,
+              "width": 158,
+              "height": 18
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

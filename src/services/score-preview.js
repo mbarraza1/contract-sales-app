@@ -4,10 +4,10 @@ import { scoreCompanies } from '../scoring.js';
 const scored = scoreCompanies(seedCompanies).map((company, index) => ({
   rank: index + 1,
   company: company.name,
-  score: company.score.totalScore,
-  buyingLikelihood: company.score.buyingLikelihoodScore,
-  size: company.score.companySizeScore,
-  contactability: company.score.contactabilityScore,
+  priorityScore: company.score.priorityScore,
+  companyScale: company.score.drivers.companyScale,
+  contactability: company.score.drivers.contactability,
+  buyingSignals: company.score.drivers.buyingSignals,
   distance: company.location.distanceMiles
 }));
 

@@ -1,0 +1,126 @@
+{"kind":"deck","id":"pr/f6casp","name":"Deck"}
+{"kind":"layout","layoutId":"6c6f3b25-bbdf-4415-a1e0-9862eece1fca","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"babb3bf9-f1ba-4faf-ac82-f73af07205f8","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/vdxa0u","slide":1,"title":"01 / PROBLEM + USERS","textShapes":14}
+{"kind":"textbox","id":"sh/4byhgn29","slide":1,"text":"01 / PROBLEM + USERS","textPreview":"01 / PROBLEM + USERS","textChars":20,"textLines":1,"bbox":[42,38,340,26]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":1,"text":"Sales reps need a sharper contractor target list","textPreview":"Sales reps need a sharper contractor target list","textChars":48,"textLines":1,"bbox":[42,86,760,144]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":1,"text":"The app converts public contractor listings and web research into a shared, ranked view of who to sell to first.","textPreview":"The app converts public contractor listings and web research into a shared, ranked view of who to sell to first.","textChars":112,"textLines":1,"bbox":[42,246,740,64]}
+{"kind":"shape","id":"sh/t83itgfm","slide":1,"name":"header-rule","bbox":[42,332,740,2]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":1,"text":"Contractor Sales Intelligence","textPreview":"Contractor Sales Intelligence","textChars":29,"textLines":1,"bbox":[42,664,360,24]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":1,"text":"10013 radius MVP","textPreview":"10013 radius MVP","textChars":16,"textLines":1,"bbox":[1060,664,178,24]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":1,"name":"left-problem-panel","bbox":[42,372,546,246]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":1,"text":"Problem","textPreview":"Problem","textChars":7,"textLines":1,"bbox":[72,398,160,30]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":1,"text":"GAF contractor results are useful, but they are not sales-ready: reps still need company size, contact paths, buying signals, and a concise reason to prioritize one account over another.","textPreview":"GAF contractor results are useful, but they are not sales-ready: reps still need company size, contact paths, buying signals, and a conci...","textChars":186,"textLines":1,"bbox":[72,444,474,118]}
+{"kind":"shape","id":"sh/i5sneloj","slide":1,"name":"problem-accent","bbox":[72,580,92,6]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":1,"text":"Goal: prioritize most likely to buy, then largest company.","textPreview":"Goal: prioritize most likely to buy, then largest company.","textChars":58,"textLines":1,"bbox":[182,568,330,34]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":1,"text":"Core user","textPreview":"Core user","textChars":9,"textLines":1,"bbox":[650,372,210,30]}
+{"kind":"shape","id":"sh/pwb2hwfy","slide":1,"name":"sales-rep-panel","bbox":[650,418,554,132]}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":1,"text":"Sales reps","textPreview":"Sales reps","textChars":10,"textLines":1,"bbox":[674,442,180,32]}
+{"kind":"textbox","id":"sh/7y1kre1w","slide":1,"text":"Primary users who need a fast way to decide which contractors to contact first, what to say, and why each company deserves priority.","textPreview":"Primary users who need a fast way to decide which contractors to contact first, what to say, and why each company deserves priority.","textChars":132,"textLines":1,"bbox":[674,488,456,46]}
+{"kind":"shape","id":"sh/wjudg7ad","slide":1,"name":"rep-workflow-1","bbox":[650,580,162,38]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":1,"text":"Rank targets","textPreview":"Rank targets","textChars":12,"textLines":1,"bbox":[670,589,122,18]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":1,"name":"rep-workflow-2","bbox":[828,580,162,38]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":1,"text":"Read rationale","textPreview":"Read rationale","textChars":14,"textLines":1,"bbox":[848,589,122,18]}
+{"kind":"shape","id":"sh/ji5snelo","slide":1,"name":"rep-workflow-3","bbox":[1006,580,198,38]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":1,"text":"Save favorites","textPreview":"Save favorites","textChars":14,"textLines":1,"bbox":[1026,589,158,18]}
+{"kind":"notes","id":"nt/vdxa0u","slide":1,"text":""}
+{"kind":"slide","id":"sl/vyitgk","slide":2,"title":"02 / ARCHITECTURE","textShapes":28}
+{"kind":"textbox","id":"sh/4byhgn29","slide":2,"text":"02 / ARCHITECTURE","textPreview":"02 / ARCHITECTURE","textChars":17,"textLines":1,"bbox":[42,38,340,26]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":2,"text":"Scrape, enrich, score, persist, present","textPreview":"Scrape, enrich, score, persist, present","textChars":39,"textLines":1,"bbox":[42,86,760,144]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":2,"text":"GAF data is enriched by Perplexity before landing in SQLite; the API computes priority and the dashboard gives every rep the same ranked view.","textPreview":"GAF data is enriched by Perplexity before landing in SQLite; the API computes priority and the dashboard gives every rep the same ranked ...","textChars":142,"textLines":1,"bbox":[42,246,740,64]}
+{"kind":"shape","id":"sh/t83itgfm","slide":2,"name":"header-rule","bbox":[42,332,740,2]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":2,"text":"Data pipeline","textPreview":"Data pipeline","textChars":13,"textLines":1,"bbox":[42,368,180,26]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":2,"name":"a1-line","bbox":[205,455,28,4]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":2,"name":"a1-head","bbox":[227,446,18,22]}
+{"kind":"shape","id":"sh/tgfmlkjm","slide":2,"name":"a2-line","bbox":[405,455,28,4]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":2,"name":"a2-head","bbox":[427,446,18,22]}
+{"kind":"shape","id":"sh/i5sneloj","slide":2,"name":"a3-line","bbox":[605,455,28,4]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":2,"name":"a3-head","bbox":[627,446,18,22]}
+{"kind":"shape","id":"sh/0bi9s36h","slide":2,"name":"a4-line","bbox":[805,455,28,4]}
+{"kind":"shape","id":"sh/pwb2hwfy","slide":2,"name":"a4-head","bbox":[827,446,18,22]}
+{"kind":"shape","id":"sh/ed8v6psf","slide":2,"name":"a5-line","bbox":[1005,455,28,4]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":2,"name":"a5-head","bbox":[1027,446,18,22]}
+{"kind":"shape","id":"sh/wjudg7ad","slide":2,"name":"flow-GAF Coveo","bbox":[42,412,158,92]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":2,"text":"GAF Coveo","textPreview":"GAF Coveo","textChars":9,"textLines":1,"bbox":[58,428,126,24]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":2,"text":"contractor search API","textPreview":"contractor search API","textChars":21,"textLines":1,"bbox":[58,458,126,32]}
+{"kind":"shape","id":"sh/72x4nap4","slide":2,"name":"flow-Playwright","bbox":[242,412,158,92]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":2,"text":"Playwright","textPreview":"Playwright","textChars":10,"textLines":1,"bbox":[258,428,126,24]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":2,"text":"token + profile details","textPreview":"token + profile details","textChars":23,"textLines":1,"bbox":[258,458,126,32]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":2,"name":"flow-Perplexity","bbox":[442,412,158,92]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":2,"text":"Perplexity","textPreview":"Perplexity","textChars":10,"textLines":1,"bbox":[458,428,126,24]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":2,"text":"enrichment + rationale","textPreview":"enrichment + rationale","textChars":22,"textLines":1,"bbox":[458,458,126,32]}
+{"kind":"shape","id":"sh/ulwval87","slide":2,"name":"flow-SQLite","bbox":[642,412,158,92]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":2,"text":"SQLite","textPreview":"SQLite","textChars":6,"textLines":1,"bbox":[658,428,126,24]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":2,"text":"companies + metrics","textPreview":"companies + metrics","textChars":19,"textLines":1,"bbox":[658,458,126,32]}
+{"kind":"shape","id":"sh/j2t83itg","slide":2,"name":"flow-Score/API","bbox":[842,412,158,92]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":2,"text":"Score/API","textPreview":"Score/API","textChars":9,"textLines":1,"bbox":[858,428,126,24]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":2,"text":"priority + favorites","textPreview":"priority + favorites","textChars":20,"textLines":1,"bbox":[858,458,126,32]}
+{"kind":"shape","id":"sh/twra5gbq","slide":2,"name":"flow-Dashboard","bbox":[1042,412,162,92]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":2,"text":"Dashboard","textPreview":"Dashboard","textChars":9,"textLines":1,"bbox":[1058,428,130,24]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":2,"text":"ranked sales queue","textPreview":"ranked sales queue","textChars":18,"textLines":1,"bbox":[1058,458,130,32]}
+{"kind":"shape","id":"sh/4nap4r65","slide":2,"name":"daily-worker","bbox":[42,548,286,70]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":2,"text":"Daily worker","textPreview":"Daily worker","textChars":12,"textLines":1,"bbox":[66,566,118,20]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":2,"text":"GAF scrape -> Perplexity -> SQLite.","textPreview":"GAF scrape -> Perplexity -> SQLite.","textChars":35,"textLines":1,"bbox":[66,592,226,28]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":2,"name":"scoring","bbox":[358,548,396,70]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":2,"text":"Overall priority score","textPreview":"Overall priority score","textChars":22,"textLines":1,"bbox":[382,566,172,20]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":2,"text":"Scale first; contactability and buying signals next.","textPreview":"Scale first; contactability and buying signals next.","textChars":52,"textLines":1,"bbox":[382,592,330,28]}
+{"kind":"shape","id":"sh/90je9cvi","slide":2,"name":"sessions","bbox":[784,548,420,70]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":2,"text":"Shared access, personal favorites","textPreview":"Shared access, personal favorites","textChars":33,"textLines":1,"bbox":[808,566,348,20]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":2,"text":"Same lead list; favorites persist by session token.","textPreview":"Same lead list; favorites persist by session token.","textChars":51,"textLines":1,"bbox":[808,592,348,28]}
+{"kind":"shape","id":"sh/yd0z6103","slide":2,"name":"backend-panel","bbox":[814,72,390,248]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":2,"text":"Current implementation","textPreview":"Current implementation","textChars":22,"textLines":1,"bbox":[842,96,210,26]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":2,"text":"Node 24 custom HTTP server","textPreview":"Node 24 custom HTTP server","textChars":26,"textLines":1,"bbox":[842,140,306,24]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":2,"text":"API: health, config, summary, companies, company detail, favorites.","textPreview":"API: health, config, summary, companies, company detail, favorites.","textChars":67,"textLines":1,"bbox":[842,178,304,46]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":2,"text":"Frontend: vanilla HTML/CSS/JS dashboard with filters, ranking table, scrollable company detail, and favorite stars.","textPreview":"Frontend: vanilla HTML/CSS/JS dashboard with filters, ranking table, scrollable company detail, and favorite stars.","textChars":115,"textLines":1,"bbox":[842,232,304,58]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":2,"name":"future-rule","bbox":[42,646,1162,2]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":2,"text":"Production path: auth, PostgreSQL, managed scraper/enrichment workers, and observability.","textPreview":"Production path: auth, PostgreSQL, managed scraper/enrichment workers, and observability.","textChars":89,"textLines":1,"bbox":[42,662,840,22]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":2,"text":"10013 radius MVP","textPreview":"10013 radius MVP","textChars":16,"textLines":1,"bbox":[1060,662,178,22]}
+{"kind":"notes","id":"nt/vyitgk","slide":2,"text":""}
+{"kind":"slide","id":"sl/7cjqfk","slide":3,"title":"03 / SCORING","textShapes":27}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":3,"text":"03 / SCORING","textPreview":"03 / SCORING","textChars":12,"textLines":1,"bbox":[42,38,340,26]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":3,"text":"How scoring works","textPreview":"How scoring works","textChars":17,"textLines":1,"bbox":[42,86,760,144]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":3,"text":"Every company gets one 0-100 priority score. The model favors companies most likely to buy, with company size carrying the most weight.","textPreview":"Every company gets one 0-100 priority score. The model favors companies most likely to buy, with company size carrying the most weight.","textChars":135,"textLines":1,"bbox":[42,246,740,64]}
+{"kind":"shape","id":"sh/bq1oryts","slide":3,"name":"header-rule","bbox":[42,332,740,2]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":3,"text":"Driver weights","textPreview":"Driver weights","textChars":14,"textLines":1,"bbox":[42,368,220,28]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":3,"text":"Company scale","textPreview":"Company scale","textChars":13,"textLines":1,"bbox":[42,416,176,22]}
+{"kind":"shape","id":"sh/4byhgn29","slide":3,"name":"scale-track","bbox":[238,420,318,14]}
+{"kind":"shape","id":"sh/bm58z25k","slide":3,"name":"scale-bar","bbox":[238,420,318,14]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":3,"text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[576,415,42,22]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":3,"text":"Contactability","textPreview":"Contactability","textChars":14,"textLines":1,"bbox":[42,450,176,22]}
+{"kind":"shape","id":"sh/1032lszq","slide":3,"name":"contactability-track","bbox":[238,454,318,14]}
+{"kind":"shape","id":"sh/u9knih4b","slide":3,"name":"contactability-bar","bbox":[238,454,170,14]}
+{"kind":"textbox","id":"sh/judg7ads","slide":3,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[576,449,42,22]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":3,"text":"Buying signals","textPreview":"Buying signals","textChars":14,"textLines":1,"bbox":[42,484,176,22]}
+{"kind":"shape","id":"sh/1orytsvu","slide":3,"name":"signals-track","bbox":[238,488,318,14]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":3,"name":"signals-bar","bbox":[238,488,148,14]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":3,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[576,483,42,22]}
+{"kind":"textbox","id":"sh/cvixczed","slide":3,"text":"Service fit","textPreview":"Service fit","textChars":11,"textLines":1,"bbox":[42,518,176,22]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":3,"name":"service-track","bbox":[238,522,318,14]}
+{"kind":"shape","id":"sh/90je9cvi","slide":3,"name":"service-bar","bbox":[238,522,127,14]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":3,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[576,517,42,22]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":3,"text":"Growth","textPreview":"Growth","textChars":6,"textLines":1,"bbox":[42,552,176,22]}
+{"kind":"shape","id":"sh/yd0z6103","slide":3,"name":"growth-track","bbox":[238,556,318,14]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":3,"name":"growth-bar","bbox":[238,556,106,14]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":3,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[576,551,42,22]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":3,"text":"Reputation","textPreview":"Reputation","textChars":10,"textLines":1,"bbox":[42,586,176,22]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":3,"name":"reputation-track","bbox":[238,590,318,14]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":3,"name":"reputation-bar","bbox":[238,590,85,14]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":3,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[576,585,42,22]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":3,"text":"Purchase need","textPreview":"Purchase need","textChars":13,"textLines":1,"bbox":[42,620,176,22]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":3,"name":"need-track","bbox":[238,624,318,14]}
+{"kind":"shape","id":"sh/sji5snel","slide":3,"name":"need-bar","bbox":[238,624,85,14]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":3,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[576,619,42,22]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":3,"text":"Certification and social activity are intentionally tiny: 1 point each.","textPreview":"Certification and social activity are intentionally tiny: 1 point each.","textChars":71,"textLines":1,"bbox":[42,654,520,24]}
+{"kind":"shape","id":"sh/3m94fu18","slide":3,"name":"score-threshold","bbox":[650,372,180,118]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":3,"text":"70+","textPreview":"70+","textChars":3,"textLines":1,"bbox":[682,392,116,50]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":3,"text":"high priority","textPreview":"high priority","textChars":13,"textLines":1,"bbox":[674,448,132,22]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":3,"name":"calc-panel","bbox":[858,372,346,118]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":3,"text":"Calculation","textPreview":"Calculation","textChars":11,"textLines":1,"bbox":[886,394,160,26]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":3,"text":"Normalize drivers to 0-100, combine by weight, then market-calibrate.","textPreview":"Normalize drivers to 0-100, combine by weight, then market-calibrate.","textChars":69,"textLines":1,"bbox":[886,432,286,42]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":3,"name":"reason-panel","bbox":[650,520,554,100]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":3,"text":"Company-specific reason","textPreview":"Company-specific reason","textChars":23,"textLines":1,"bbox":[678,542,270,26]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":3,"text":"Perplexity rationale comes first. Then the app adds evidence from the strongest drivers: scale, contactability, buying signals, purchase need, or reputation.","textPreview":"Perplexity rationale comes first. Then the app adds evidence from the strongest drivers: scale, contactability, buying signals, purchase ...","textChars":157,"textLines":1,"bbox":[678,580,480,38]}
+{"kind":"shape","id":"sh/j6tovaho","slide":3,"name":"tie-rule","bbox":[650,648,554,2]}
+{"kind":"textbox","id":"sh/ulwval87","slide":3,"text":"Tie-breakers: priority score first, then larger company, then contactability.","textPreview":"Tie-breakers: priority score first, then larger company, then contactability.","textChars":77,"textLines":1,"bbox":[650,662,520,22]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":3,"text":"Model: overall-priority-v3","textPreview":"Model: overall-priority-v3","textChars":26,"textLines":1,"bbox":[1002,38,202,24]}
+{"kind":"notes","id":"nt/7cjqfk","slide":3,"text":""}

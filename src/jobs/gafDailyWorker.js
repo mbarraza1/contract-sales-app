@@ -1,5 +1,6 @@
 import { config } from '../config.js';
 import { ingestGafContractors } from '../services/gafIngestion.js';
+import { enrichGafCacheWithPerplexity } from '../services/perplexityEnrichment.js';
 
 let running = false;
 
@@ -38,6 +39,13 @@ async function runOnce() {
       zip: config.seedZip,
       distanceMiles: config.searchDistanceMiles
     });
+    if (config.perplexity.enrichAfterGaf) {
+      await enrichGafCacheWithPerplexity({
+        limit: config.perplexity.enrichLimit,
+        concurrency: config.perplexity.enrichConcurrency,
+        delayMs: config.perplexity.enrichDelayMs
+      });
+    }
     const seconds = Math.round((Date.now() - startedAt) / 100) / 10;
     console.log(
       `GAF scrape succeeded: ${result.scrape.listingCount} listings in ${seconds}s. Cache: ${result.cachePath}`

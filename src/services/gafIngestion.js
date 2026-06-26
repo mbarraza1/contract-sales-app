@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 import { config } from '../config.js';
-import { upsertGafScrapeResults } from '../db/postgres.js';
+import { upsertGafScrapeResultsToSqlite } from '../db/sqlite.js';
 import { buildGafSearchUrl, scrapeGafContractors } from '../scrapers/gafScraper.js';
 import { searchGafCoveoContractors } from './gafCoveoClient.js';
 import { mapGafScrapeToCompanies } from './gafMapper.js';
@@ -12,7 +12,7 @@ export { buildGafSearchUrl };
 export async function ingestGafContractors({
   zip = config.seedZip,
   distanceMiles = config.searchDistanceMiles,
-  databaseUrl = config.databaseUrl,
+  databasePath = config.sqlitePath,
   cachePath = config.gaf.cachePath,
   logger = console,
   scrapeOptions = {}
@@ -35,8 +35,8 @@ export async function ingestGafContractors({
   await writeGafCache(scrape, cachePath);
 
   let databaseResult = null;
-  if (databaseUrl) {
-    databaseResult = await upsertGafScrapeResults(databaseUrl, scrape, {
+  if (databasePath) {
+    databaseResult = await upsertGafScrapeResultsToSqlite(databasePath, scrape, {
       organizationName: config.organizationName
     });
   }
@@ -55,7 +55,11 @@ export async function writeGafCache(scrape, cachePath = config.gaf.cachePath) {
   return absolutePath;
 }
 
+export async function readGafScrapeCache(cachePath = config.gaf.cachePath) {
+  return JSON.parse(await readFile(path.resolve(cachePath), 'utf8'));
+}
+
 export async function loadGafCache(cachePath = config.gaf.cachePath) {
-  const payload = JSON.parse(await readFile(path.resolve(cachePath), 'utf8'));
+  const payload = await readGafScrapeCache(cachePath);
   return mapGafScrapeToCompanies(payload);
 }

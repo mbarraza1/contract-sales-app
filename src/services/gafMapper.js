@@ -1,12 +1,16 @@
 import { normalizeWhitespace } from './gafParser.js';
 
 export function mapGafListingToCompany(listing) {
+  const enrichment = listing.perplexityEnrichment?.data ?? {};
   const searchableText = [
     listing.name,
     listing.aboutText,
     ...(listing.certifications ?? []),
-    ...(listing.specialties ?? [])
+    ...(listing.specialties ?? []),
+    ...(enrichment.services ?? []),
+    ...(enrichment.buyingSignals ?? [])
   ].join(' ');
+  const services = uniqueStrings([...inferServices(listing), ...(enrichment.services ?? [])]);
 
   return {
     id: listing.contractorId ? `gaf-${listing.contractorId}` : slugify(listing.name),
@@ -30,38 +34,50 @@ export function mapGafListingToCompany(listing) {
       specialties: listing.specialties ?? []
     },
     metrics: {
-      employeeCountEstimate: null,
-      annualRevenueEstimate: null,
-      yearsInBusiness: listing.yearsInBusiness,
-      locationCount: null,
+      employeeCountEstimate: enrichment.employeeCountEstimate ?? null,
+      annualRevenueEstimate: enrichment.annualRevenueEstimate ?? null,
+      yearsInBusiness: enrichment.yearsInBusiness ?? listing.yearsInBusiness,
+      locationCount: enrichment.locationCount ?? null,
       reviewRating: listing.reviewRating,
       reviewCount: listing.reviewCount,
-      recentReviewCount90d: null,
-      hiringSignalCount: null,
-      websiteQualityScore: listing.websiteUrl ? 65 : null,
-      websiteFreshnessScore: null,
-      serviceBreadthScore: inferServiceBreadthScore(listing),
-      growthSignalScore: null,
-      socialActivityScore: null,
-      contactConfidenceScore: inferContactConfidenceScore(listing),
-      hasFinancing: null,
-      vendorStackVisible: null,
-      decisionMakerFound: null,
-      emailFound: null,
-      residentialFocus: true,
-      stormDamageFocus: /storm|insurance/i.test(searchableText),
-      solarService: /solar/i.test(searchableText),
-      metalRoofingService: /metal/i.test(searchableText),
-      services: inferServices(listing)
+      recentReviewCount90d: enrichment.recentReviewCount90d ?? null,
+      hiringSignalCount: enrichment.hiringSignalCount ?? null,
+      websiteQualityScore: enrichment.websiteQualityScore ?? (listing.websiteUrl ? 65 : null),
+      websiteFreshnessScore: enrichment.websiteFreshnessScore ?? null,
+      serviceBreadthScore: enrichment.serviceBreadthScore ?? inferServiceBreadthScore(listing),
+      growthSignalScore: enrichment.growthSignalScore ?? null,
+      socialActivityScore: enrichment.socialActivityScore ?? null,
+      contactConfidenceScore: enrichment.contactConfidenceScore ?? inferContactConfidenceScore(listing),
+      hasFinancing: enrichment.hasFinancing ?? null,
+      vendorStackVisible: enrichment.vendorStackVisible ?? null,
+      decisionMakerFound: enrichment.decisionMakerFound ?? null,
+      emailFound: enrichment.emailFound ?? null,
+      residentialFocus: enrichment.residentialFocus ?? true,
+      stormDamageFocus: enrichment.stormDamageFocus ?? /storm|insurance/i.test(searchableText),
+      solarService: enrichment.solarService ?? /solar/i.test(searchableText),
+      metalRoofingService: enrichment.metalRoofingService ?? /metal/i.test(searchableText),
+      services
     },
     sources: [
       {
         type: 'gaf',
         title: 'GAF contractor profile',
         url: listing.profileUrl
-      }
+      },
+      ...(enrichment.sources ?? []).map((source) => ({
+        type: 'perplexity',
+        title: source.title ?? 'Perplexity source',
+        url: source.url,
+        fields: source.fields ?? [],
+        snippet: source.snippet ?? null
+      }))
     ],
-    lastEnrichedAt: listing.scrapedAt
+    salesSummary: enrichment.summary ?? null,
+    priorityRationale: enrichment.priorityRationale ?? null,
+    buyingSignals: enrichment.buyingSignals ?? [],
+    riskFlags: enrichment.riskFlags ?? [],
+    contacts: enrichment.contacts ?? [],
+    lastEnrichedAt: listing.perplexityEnrichment?.enrichedAt ?? listing.scrapedAt
   };
 }
 
@@ -127,4 +143,8 @@ function inferServices(listing) {
   if (text.includes('skylight')) services.push('Skylights');
 
   return [...new Set(services)];
+}
+
+function uniqueStrings(values) {
+  return [...new Set(values.filter((item) => typeof item === 'string').map((item) => item.trim()).filter(Boolean))];
 }

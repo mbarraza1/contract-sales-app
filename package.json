@@ -4,19 +4,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js",
-    "test": "node --test",
-    "score:preview": "node src/services/score-preview.js",
-    "scrape:gaf": "node src/jobs/scrape-gaf.js",
-    "worker:gaf-daily": "node src/jobs/gafDailyWorker.js",
-    "db:schema": "psql \"$DATABASE_URL\" -f db/schema.sql"
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test",
+    "score:preview": "node --disable-warning=ExperimentalWarning src/services/score-preview.js",
+    "scrape:gaf": "node --disable-warning=ExperimentalWarning src/jobs/scrape-gaf.js",
+    "enrich:perplexity": "node --disable-warning=ExperimentalWarning src/jobs/enrich-perplexity.js",
+    "worker:gaf-daily": "node --disable-warning=ExperimentalWarning src/jobs/gafDailyWorker.js",
+    "db:schema": "node --disable-warning=ExperimentalWarning src/jobs/init-sqlite.js",
+    "db:backfill": "node --disable-warning=ExperimentalWarning src/jobs/backfill-sqlite.js"
   },
   "dependencies": {
-    "pg": "^8.12.0",
     "playwright": "^1.49.1"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   }
 }

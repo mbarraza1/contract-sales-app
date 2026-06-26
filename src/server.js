@@ -5,8 +5,8 @@ import { fileURLToPath } from 'node:url';
 
 import { config } from './config.js';
 import { seedCompanies } from './data/seedCompanies.js';
-import { loadCompaniesFromPostgres } from './db/postgres.js';
-import { scoreCompanies } from './scoring.js';
+import { loadCompaniesFromSqlite, loadFavoriteCompanyIds, setFavoriteCompany } from './db/sqlite.js';
+import { HIGH_PRIORITY_THRESHOLD, scoreCompanies } from './scoring.js';
 import { loadGafCache } from './services/gafIngestion.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -21,66 +21,44 @@ const contentTypes = new Map([
   ['.svg', 'image/svg+xml']
 ]);
 
-async function loadCompanies() {
-  if (!config.databaseUrl) {
-    try {
-      const companies = await loadGafCache();
-      return {
-        companies,
-        source: 'gaf_cache'
-      };
-    } catch {
-      // Local development starts with fixtures until the first scraper run writes a cache.
-    }
+const sessionTokenPattern = /^[A-Za-z0-9._:-]{24,128}$/;
 
-    return {
-      companies: seedCompanies,
-      source: 'demo'
-    };
+async function loadCompanies() {
+  if (config.sqlitePath) {
+    try {
+      const companies = await loadCompaniesFromSqlite(config.sqlitePath);
+      if (companies.length > 0) {
+        return {
+          companies,
+          source: 'sqlite'
+        };
+      }
+    } catch (error) {
+      console.error('SQLite load failed; falling back to local cache.', error);
+    }
   }
 
   try {
-    const companies = await loadCompaniesFromPostgres(config.databaseUrl);
-    if (companies.length === 0) {
-      try {
-        return {
-          companies: await loadGafCache(),
-          source: 'gaf_cache'
-        };
-      } catch {
-        return {
-          companies: seedCompanies,
-          source: 'demo_empty_postgres'
-        };
-      }
-    }
-
+    const companies = await loadGafCache();
     return {
       companies,
-      source: 'postgres'
+      source: 'gaf_cache'
     };
-  } catch (error) {
-    console.error('PostgreSQL load failed; falling back to demo fixtures.', error);
-    try {
-      return {
-        companies: await loadGafCache(),
-        source: 'gaf_cache'
-      };
-    } catch {
-      // Fall through to fixtures.
-    }
-
-    return {
-      companies: seedCompanies,
-      source: 'demo_fallback'
-    };
+  } catch {
+    // Local development starts with fixtures until the first scraper run writes a cache.
   }
+
+  return {
+    companies: seedCompanies,
+    source: 'demo'
+  };
 }
 
 function filterCompanies(companies, searchParams) {
   const query = (searchParams.get('q') ?? '').trim().toLowerCase();
   const state = searchParams.get('state') ?? 'all';
   const minScore = Number.parseFloat(searchParams.get('minScore') ?? '0');
+  const favoritesOnly = searchParams.get('favoritesOnly') === 'true';
 
   return companies.filter((company) => {
     const haystack = [
@@ -97,16 +75,18 @@ function filterCompanies(companies, searchParams) {
 
     const matchesQuery = query.length === 0 || haystack.includes(query);
     const matchesState = state === 'all' || company.location?.state === state;
-    const matchesScore = company.score.totalScore >= minScore;
+    const matchesScore = company.score.priorityScore >= minScore;
+    const matchesFavorite = !favoritesOnly || company.favorite;
 
-    return matchesQuery && matchesState && matchesScore;
+    return matchesQuery && matchesState && matchesScore && matchesFavorite;
   });
 }
 
 function summarize(companies, source) {
-  const highPriority = companies.filter((company) => company.score.totalScore >= 70).length;
+  const highPriority = companies.filter((company) => company.score.priorityScore >= HIGH_PRIORITY_THRESHOLD).length;
+  const favoriteCount = companies.filter((company) => company.favorite).length;
   const averageScore = companies.length
-    ? companies.reduce((sum, company) => sum + company.score.totalScore, 0) / companies.length
+    ? companies.reduce((sum, company) => sum + company.score.priorityScore, 0) / companies.length
     : 0;
   const states = [...new Set(companies.map((company) => company.location?.state).filter(Boolean))].sort();
 
@@ -117,6 +97,7 @@ function summarize(companies, source) {
     scoringModelVersion: config.scoringModelVersion,
     companyCount: companies.length,
     highPriority,
+    favoriteCount,
     averageScore: Math.round(averageScore * 10) / 10,
     states
   };
@@ -130,9 +111,46 @@ async function sendJson(response, statusCode, payload) {
   response.end(JSON.stringify(payload));
 }
 
+async function readJsonBody(request) {
+  let body = '';
+  for await (const chunk of request) {
+    body += chunk;
+    if (body.length > 100000) throw new Error('Request body is too large.');
+  }
+
+  if (!body.trim()) return {};
+  return JSON.parse(body);
+}
+
+function getSessionToken(request) {
+  const token = String(request.headers['x-session-token'] ?? '').trim();
+  return sessionTokenPattern.test(token) ? token : null;
+}
+
+async function addFavoriteState(companies, request) {
+  const sessionToken = getSessionToken(request);
+  if (!sessionToken || !config.sqlitePath) {
+    return {
+      companies: companies.map((company) => ({ ...company, favorite: false })),
+      favoriteCompanyIds: []
+    };
+  }
+
+  const favoriteCompanyIds = await loadFavoriteCompanyIds(config.sqlitePath, sessionToken);
+  const favorites = new Set(favoriteCompanyIds);
+  return {
+    companies: companies.map((company) => ({
+      ...company,
+      favorite: favorites.has(company.id)
+    })),
+    favoriteCompanyIds
+  };
+}
+
 async function handleApi(request, response, url) {
   const { companies, source } = await loadCompanies();
   const scoredCompanies = scoreCompanies(companies);
+  const { companies: sessionCompanies, favoriteCompanyIds } = await addFavoriteState(scoredCompanies, request);
 
   if (url.pathname === '/api/health') {
     return sendJson(response, 200, { ok: true });
@@ -148,19 +166,42 @@ async function handleApi(request, response, url) {
   }
 
   if (url.pathname === '/api/summary') {
-    return sendJson(response, 200, summarize(scoredCompanies, source));
+    return sendJson(response, 200, summarize(sessionCompanies, source));
   }
 
   if (url.pathname === '/api/companies') {
     return sendJson(response, 200, {
-      summary: summarize(scoredCompanies, source),
-      companies: filterCompanies(scoredCompanies, url.searchParams)
+      summary: summarize(sessionCompanies, source),
+      companies: filterCompanies(sessionCompanies, url.searchParams)
     });
+  }
+
+  if (url.pathname === '/api/favorites' && request.method === 'GET') {
+    return sendJson(response, 200, {
+      favoriteCompanyIds
+    });
+  }
+
+  const favoriteMatch = url.pathname.match(/^\/api\/favorites\/([^/]+)$/);
+  if (favoriteMatch && (request.method === 'PUT' || request.method === 'DELETE')) {
+    const sessionToken = getSessionToken(request);
+    if (!sessionToken) return sendJson(response, 401, { error: 'Valid session token is required.' });
+
+    const companyId = decodeURIComponent(favoriteMatch[1]);
+    const company = sessionCompanies.find((candidate) => candidate.id === companyId);
+    if (!company) return sendJson(response, 404, { error: 'Company not found' });
+
+    if (request.method === 'PUT') {
+      await readJsonBody(request);
+    }
+
+    const result = await setFavoriteCompany(config.sqlitePath, sessionToken, companyId, request.method === 'PUT');
+    return sendJson(response, 200, result);
   }
 
   const companyMatch = url.pathname.match(/^\/api\/companies\/([^/]+)$/);
   if (companyMatch) {
-    const company = scoredCompanies.find((candidate) => candidate.id === companyMatch[1]);
+    const company = sessionCompanies.find((candidate) => candidate.id === companyMatch[1]);
     if (!company) return sendJson(response, 404, { error: 'Company not found' });
     return sendJson(response, 200, company);
   }

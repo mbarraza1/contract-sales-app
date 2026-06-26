@@ -1,11 +1,16 @@
+import { existsSync, readFileSync } from 'node:fs';
+import path from 'node:path';
+
+loadEnvFile();
+
 export const config = {
   port: Number.parseInt(process.env.PORT ?? '3000', 10),
   host: process.env.HOST ?? '127.0.0.1',
   seedZip: process.env.SEED_ZIP ?? '10013',
   searchDistanceMiles: Number.parseInt(process.env.SEARCH_DISTANCE_MILES ?? '25', 10),
-  databaseUrl: process.env.DATABASE_URL ?? '',
+  sqlitePath: process.env.SQLITE_DB_PATH ?? 'storage/contract-sales.sqlite',
   organizationName: process.env.ORGANIZATION_NAME ?? 'Default Sales Team',
-  scoringModelVersion: 'likely-to-buy-size-v1',
+  scoringModelVersion: 'overall-priority-v3',
   gaf: {
     dataSource: process.env.GAF_DATA_SOURCE ?? 'coveo',
     cachePath: process.env.GAF_CACHE_PATH ?? 'storage/gaf-contractors-10013.json',
@@ -24,6 +29,37 @@ export const config = {
   perplexity: {
     apiKey: process.env.PERPLEXITY_API_KEY ?? '',
     apiUrl: process.env.PERPLEXITY_API_URL ?? 'https://api.perplexity.ai/chat/completions',
-    model: process.env.PERPLEXITY_MODEL ?? 'sonar-pro'
+    model: process.env.PERPLEXITY_MODEL ?? 'sonar-pro',
+    enrichLimit: Number.parseInt(process.env.PERPLEXITY_ENRICH_LIMIT ?? '5', 10),
+    enrichConcurrency: Number.parseInt(process.env.PERPLEXITY_ENRICH_CONCURRENCY ?? '1', 10),
+    enrichDelayMs: Number.parseInt(process.env.PERPLEXITY_ENRICH_DELAY_MS ?? '500', 10),
+    enrichAfterGaf: (process.env.PERPLEXITY_ENRICH_AFTER_GAF ?? 'false') === 'true'
   }
 };
+
+function loadEnvFile() {
+  const envPath = path.resolve('.env');
+  if (!existsSync(envPath)) return;
+
+  const lines = readFileSync(envPath, 'utf8').split(/\r?\n/);
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+
+    const match = trimmed.match(/^([A-Za-z_][A-Za-z0-9_]*)=(.*)$/);
+    if (!match) continue;
+
+    const [, key, rawValue] = match;
+    if (process.env[key] !== undefined) continue;
+    process.env[key] = parseEnvValue(rawValue);
+  }
+}
+
+function parseEnvValue(value) {
+  const trimmed = value.trim();
+  if ((trimmed.startsWith('"') && trimmed.endsWith('"')) || (trimmed.startsWith("'") && trimmed.endsWith("'"))) {
+    return trimmed.slice(1, -1);
+  }
+
+  return trimmed;
+}
